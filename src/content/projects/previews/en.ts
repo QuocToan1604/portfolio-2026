@@ -1,36 +1,36 @@
-import thumbnailCubeWar from "../../../assets/thumbnails/cubewar.webp";
-import thumbnailQuibbo from "../../../assets/thumbnails/quibbo.webp";
+import thumbnailWebite from "../../../assets/thumbnails/website.webp";
+import thumbnailn8n from "../../../assets/thumbnails/n8n.webp";
 //import thumbnailParticles from "../../../assets/thumbnails/particles.webp";
-import thumbnailPokedex from "../../../assets/thumbnails/pokedex.webp";
-import thumbnailSharkie from "../../../assets/thumbnails/sharkie.webp";
-import thumbnailStreakon from "../../../assets/thumbnails/streakon.webp";
+import thumbnailAapanel from "../../../assets/thumbnails/aapanel.webp";
+import thumbnail247Phim from "../../../assets/thumbnails/247phim.webp";
+import thumbnailPinterest from "../../../assets/thumbnails/pinterest.webp";
 
 import type { ProjectPreview } from "../../types";
 
 export default [
   {
-    title: "StreakOn",
-    slug: "streakon",
-    thumbnail: thumbnailStreakon,
-    description: "Social habit tracking app",
+    title: "ThePigskinNews",
+    slug: "thepigskinnews",
+    thumbnail: thumbnailWebite,
+    description: "Tự động thu thập và đăng tin NFL bằng AI.",
   },
   {
-    title: "CubeWar",
-    slug: "cubewar",
-    thumbnail: thumbnailCubeWar,
-    description: "Multiplayer strategy game",
+    title: "Pinterest Automation",
+    slug: "pinterest",
+    thumbnail: thumbnailPinterest,
+    description: "Tự động tạo và đăng nội dung lên Pinterest.",
   },
   {
-    title: "Quibbo",
-    slug: "quibbo",
-    thumbnail: thumbnailQuibbo,
-    description: "Multiplayer gaming platform",
+    title: "AI Content System (n8n)",
+    slug: "n8n",
+    thumbnail: thumbnailn8n,
+    description: "Xây dựng các workflow AI và tự động hóa bằng n8n.",
   },
   {
-    title: "Sharkie",
-    slug: "sharkie",
-    thumbnail: thumbnailSharkie,
-    description: "2D adventure game",
+    title: "247Phim",
+    slug: "247phim",
+    thumbnail: thumbnail247Phim,
+    description: "Website xem phim trực tuyến, dự án đầu tiên đánh dấu hành trình học lập trình web.",
   },
   /**  {
     title: "WebGL Particles",
@@ -39,9 +39,9 @@ export default [
     description: "Dynamic 3D particles",
   }, */
   {
-    title: "Pokédex",
-    slug: "pokedex",
-    thumbnail: thumbnailPokedex,
-    description: "Open-source learning project",
+    title: "Self-hosted Infrastructure",
+    slug: "Self-hosted-Infrastructure",
+    thumbnail: thumbnailAapanel,
+    description: "Triển khai và quản lý các dịch vụ tự lưu trữ bằng Docker và VPS.",
   },
 ] as const satisfies ProjectPreview[];

@@ -24,7 +24,7 @@ const showAttribution = import.meta.env.VITE_SHOW_ATTRIBUTION !== "false";
 </script>
 
 <template>
-  <footer class="footer">
+  <footer class="footer" >
     <NotchSection class="footer-notch" />
     <div class="footer-content">
       <div
@@ -39,10 +39,10 @@ const showAttribution = import.meta.env.VITE_SHOW_ATTRIBUTION !== "false";
           <ArrowRightLong class="footer-back-to-top-icon" />
         </ButtonRound>
       </div>
-      <div class="footer-top">
+      <div class="footer-top" >
         <Social v-if="withSocial" />
-        <div class="footer-top-links">
-          <div class="footer-top-links-legal">
+        <div class="footer-top-links" , style="display: none">
+          <div class="footer-top-links-legal", style="display: none">
             <Clickable renderAs="div">
               <Link
                 :href="locale === 'de' ? '/de/privacy' : '/privacy'"
@@ -54,7 +54,7 @@ const showAttribution = import.meta.env.VITE_SHOW_ATTRIBUTION !== "false";
                 >{{ t("privacy") }}</Link
               >
             </Clickable>
-            <Clickable renderAs="div">
+            <Clickable renderAs="div" >
               <Link
                 :href="locale === 'de' ? '/de/legal' : '/legal'"
                 class="footer-link children-unclickable"
@@ -69,7 +69,7 @@ const showAttribution = import.meta.env.VITE_SHOW_ATTRIBUTION !== "false";
           <LangSwitch />
         </div>
       </div>
-      <div class="footer-credits">
+      <div class="footer-credits", style="display:none">
         <div v-if="showAttribution" class="footer-credits-built">
           <p>
             {{ t("original-concept-by") }}
@@ -96,7 +96,7 @@ const showAttribution = import.meta.env.VITE_SHOW_ATTRIBUTION !== "false";
               external
               data-cursor="circle-white"
               data-hoversound="hover"
-              >HM Surf</Link
+              >Huynh Quoc Toan</Link
             >
           </Clickable>
         </div>
